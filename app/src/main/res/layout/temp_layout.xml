@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_6sdp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="@dimen/_130sdp">
+
+                <RelativeLayout
+                    android:id="@+id/tiffinService"
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/yellow_draw">
+
+                    <TextView
+                        android:id="@+id/tiffin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tiffin Service"
+                        android:textColor="@color/bg"
+                        android:textSize="@dimen/_18sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:fontFamily="@font/baloo"/>
+                    <TextView
+                        android:layout_below="@id/tiffin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EXPAND ALL"
+                        android:textAllCaps="true"
+                        android:textColor="@color/dark_greay"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/office"/>
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/food_img"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="@dimen/_130sdp">
+
+                <RelativeLayout
+                    android:id="@+id/paintingService"
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/red_draw">
+
+                    <TextView
+                        android:id="@+id/paint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Painting &amp; Cleaning"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_14sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:fontFamily="@font/baloo"/>
+                    <TextView
+                        android:layout_below="@id/paint"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EXPAND ALL"
+                        android:textAllCaps="true"
+                        android:textColor="@color/limeGreay"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/office"/>
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/painting_img"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="@dimen/_130sdp">
+
+                <RelativeLayout
+                    android:id="@+id/packerMover"
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/black_draw">
+
+                    <TextView
+                        android:id="@+id/packer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Packers &amp; Movers"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:fontFamily="@font/baloo"/>
+                    <TextView
+                        android:layout_below="@id/packer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EXPAND ALL"
+                        android:textAllCaps="true"
+                        android:textColor="@color/limeGreay"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/office"/>
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/packer_mover"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_width="@dimen/_260sdp"
+                android:layout_height="@dimen/_130sdp">
+
+                <RelativeLayout
+                    android:id="@+id/repairService"
+                    android:layout_width="@dimen/_260sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/blue_draw">
+
+                    <TextView
+                        android:id="@+id/rep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Repair Service"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_18sdp"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_margin="@dimen/_10sdp"
+                        android:fontFamily="@font/baloo"/>
+                    <TextView
+                        android:layout_below="@id/rep"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EXPAND ALL"
+                        android:textAllCaps="true"
+                        android:textColor="@color/limeGreay"
+                        android:textSize="@dimen/_10ssp"
+                        android:layout_marginLeft="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/office"/>
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/electrician"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "175536096976",
+    "project_id": "findro-4f76b",
+    "storage_bucket": "findro-4f76b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175536096976:android:846eb40a2c01a25cc880d5",
+        "android_client_info": {
+          "package_name": "com.bypriyan.findro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175536096976-mcnebf40hlol75bfkb3tfqhb6mpq221t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnWZGmjoBjr2nkeCdorBjSYI5L_us3DNA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175536096976-mcnebf40hlol75bfkb3tfqhb6mpq221t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

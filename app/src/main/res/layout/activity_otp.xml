@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register.OtpActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+
+        <TextView
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/office"
+            android:includeFontPadding="false"
+            android:text="CODE"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:textSize="100sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/office"
+            android:includeFontPadding="false"
+            android:text="verification"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
+
+        <TextView
+            android:id="@+id/otp_description_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/office"
+            android:includeFontPadding="false"
+            android:text="Enter one time passoword send on "
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/phoneLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="verify +91"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="14sp">
+
+        </TextView>
+
+
+        <EditText
+            android:id="@+id/otp"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:maxLength="6"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:outlineSpotShadowColor="@color/black"
+            android:hint="Enter OTP here"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:backgroundTint="@color/black"
+            android:drawablePadding="@dimen/_15sdp"
+            android:inputType="number">
+
+        </EditText>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_50sdp"
+                android:text="Continue"
+                app:cornerRadius="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:id="@+id/submitBtn"
+                android:textColor="@color/white"
+                android:layout_below="@+id/temp"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/blue">
+            </com.google.android.material.button.MaterialButton>
+
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/blue"
+                android:visibility="invisible">
+
+            </ProgressBar>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</ScrollView>

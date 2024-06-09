@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.MyPropertys">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/blue">
+
+            <TextView
+                android:id="@+id/searchType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Propertie"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/_16ssp"/>
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="@dimen/_26sdp"
+                android:layout_height="@dimen/_26sdp"
+                android:src="@drawable/ic_arrow_back"
+                android:padding="@dimen/_4sdp"
+                android:tint="@color/white"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_5sdp"/>
+
+        </RelativeLayout>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/resultLottie"
+            android:layout_below="@id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_250sdp"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:lottie_autoPlay="true"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/search_is_empty" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/rel"
+            android:id="@+id/recyclearRoomsVertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:listitem="@layout/row_my_property"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

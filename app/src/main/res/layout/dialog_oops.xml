@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="@dimen/_120sdp"
+            android:layout_margin="@dimen/_4sdp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/illus_ops"/>
+
+        <TextView
+            android:id="@+id/contectWith"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Oops..!"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/baloo"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_24ssp">
+        </TextView>
+
+        <TextView
+            android:layout_below="@id/wel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You have to register to access the full feature."
+            android:gravity="start"
+            android:id="@+id/det"
+            android:layout_gravity="center_horizontal"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/dark_greay">
+        </TextView>
+
+        <View
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#7CBFC9CA"/>
+
+        <TextView
+            android:id="@+id/okay"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:text="Okay"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_12ssp">
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="#7CBFC9CA"/>
+
+        <TextView
+            android:id="@+id/later"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:text="Later"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textColor="@color/dark_greay"
+            android:textSize="@dimen/_12ssp">
+        </TextView>
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

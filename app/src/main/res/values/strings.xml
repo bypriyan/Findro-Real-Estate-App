@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Findro</string>
+    <string name="rules">By continuing, you agree to Findro\'s</string>
+    <string name="otp">Add your phone number. We\'ll send you a verification code</string>
+    <string name="otp1">so we know you\'re real</string>
+    <string name="phone">Due to COVID-19, our full team are working remotely. Please Email US. </string>
+    <string name="address">45WF+55W, Ambikapur, Chhattisgarh 497001, India</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="app_detail">We helps you to find Rooms, Hostel, Flat, PG and commercial property on rent. You can post your property on rent
+        and grow your rental business.</string>
+    <string name="low_price">No surprises at the time of service, no hidden costs</string>
+    <string name="bookNow">Book now, cancel or change anytime later. No questions asked.e</string>
+    <string name="verified">Only verified and best-in-class service professionals are chosen after stringent quality check</string>
+    <string name="food_servie">we will deliver you the best quality food and maintain all hygiene guidelines</string>
+    <string name="Milk_servie">we will deliver you the best quality Milk and maintain all hygiene guidelines</string>
+    <string name="painting">Our Partner arrives at your doorstep</string>
+    <string name="no_broker">Owners looking for tenants. Tenants looking for a Rooms, Hostel, Flat, PG and commercial property Finding each other on Findro.</string>
+
+</resources>

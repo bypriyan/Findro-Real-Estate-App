@@ -1,0 +1,4 @@
+rootProject.name = "Findro"
+include ':app'
+include ':NativeTemplatesAndroid-1.0.0'
+include ':nativetemplates'

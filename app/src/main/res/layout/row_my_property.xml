@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_margin="@dimen/_8sdp"
+    android:layout_marginTop="@dimen/_7sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_below="@id/tranding"
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:layout_height="wrap_content">
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="12dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:id="@+id/image_slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_170sdp"
+                    app:iss_auto_cycle="true"
+                    app:iss_unselected_dot="@color/transparent"
+                    app:iss_selected_dot="@color/transparent"
+                    app:iss_period="4000"
+                    app:iss_delay="0"/>
+
+                <TextView
+                    android:id="@+id/propertyTypeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:background="@drawable/yellow_bg"
+                    android:textSize="@dimen/_10ssp"
+                    android:padding="@dimen/_3sdp"
+                    android:layout_margin="@dimen/_6sdp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:id="@+id/editBtn"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:src="@drawable/ic_edit"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_gravity="end"
+                    android:background="@drawable/back_btn_bg"
+                    android:tint="@color/green"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginRight="@dimen/_45sdp"/>
+
+                <ImageView
+                    android:id="@+id/deleteBtn"
+                    android:layout_width="@dimen/_26sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:src="@drawable/ic_delete"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_gravity="end"
+                    android:background="@drawable/back_btn_bg"
+                    android:tint="@color/red"
+                    android:layout_margin="@dimen/_6sdp"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginBottom="@dimen/_3sdp">
+
+            <TextView
+                android:id="@+id/addressTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:maxLines="1"
+                android:drawableTint="#81FF5722"
+                android:drawableStart="@drawable/ic_location"
+                android:drawablePadding="@dimen/_4sdp"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:textColor="@color/bg">
+            </TextView>
+
+            <RelativeLayout
+                android:layout_below="@id/addressTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/priseTv"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content"
+                    android:text="₹500"
+                    android:textSize="@dimen/_16ssp"
+                    android:textStyle="bold"
+                    android:textColor="#7e7e7e"/>
+                <TextView
+                    android:id="@+id/details"
+                    android:layout_width="@dimen/_85sdp"
+                    android:layout_height="@dimen/_26sdp"
+                    android:text="View Detail"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/radio_selected"
+                    android:padding="@dimen/_3sdp"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="@color/white">
+                </TextView>
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

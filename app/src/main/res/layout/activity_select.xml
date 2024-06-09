@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".register.SelectActivity">
+
+    <ScrollView
+        android:layout_above="@id/btnsLayout"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/skipBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10ssp"
+                android:text="SKIP"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/_1sdp"
+                android:paddingBottom="@dimen/_1sdp"
+                android:layout_margin="@dimen/_12sdp"
+                android:layout_alignParentEnd="true"
+                android:paddingEnd="@dimen/_6sdp"
+                android:paddingStart="@dimen/_6sdp"/>
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_below="@id/skipBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/ills_gb"/>
+
+            <TextView
+                android:layout_below="@id/img"
+                android:id="@+id/wel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ghar Se Bahr Apna Ghar"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:padding="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:textSize="@dimen/_22ssp">
+            </TextView>
+
+            <TextView
+                android:layout_below="@id/wel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_broker"
+                android:padding="@dimen/_5sdp"
+                android:gravity="start"
+                android:id="@+id/det"
+                android:textSize="@dimen/_10sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:textColor="@color/bg">
+            </TextView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btnsLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_15sdp">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:text="Log in"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:id="@+id/login"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            app:cornerRadius="@dimen/_6sdp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/blue"/>
+
+        <TextView
+            android:id="@+id/signUp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:textSize="@dimen/_12ssp"
+            android:text="Create Account"
+            android:gravity="center"
+            android:textColor="@color/blue"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_blue_outline"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

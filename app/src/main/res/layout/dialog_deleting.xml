@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="@dimen/_15sdp"
+    android:padding="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_4sdp">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_centerHorizontal="true"
+        app:lottie_autoPlay="true"
+        android:layout_gravity="center_horizontal"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/lottie_delete" />
+
+    <TextView
+        android:id="@+id/textDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:layout_below="@id/lottieAnimationView"
+        android:textColor="@color/dark_greay"
+        android:textSize="@dimen/_12ssp"
+        android:layout_margin="@dimen/_9sdp"/>
+
+    <LinearLayout
+        android:layout_below="@id/textDialog"
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/black"
+            android:text="Cancel"
+            android:id="@+id/cancel"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/_12ssp"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/bg_search"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_44sdp"
+            android:text="Delete"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/delete"
+            app:cornerRadius="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/red"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+
+</com.google.android.material.card.MaterialCardView>

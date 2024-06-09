@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.EditPropertyActivity">
+
+    <ImageView
+        android:id="@+id/backBt"
+        android:layout_width="@dimen/_26sdp"
+        android:layout_height="@dimen/_26sdp"
+        android:src="@drawable/ic_arrow_back"
+        android:padding="@dimen/_4sdp"
+        android:tint="@color/black"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_5sdp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Property"
+        android:elevation="@dimen/_3sdp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/blue"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_below="@id/backBt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/_3sdp"
+                android:text="Property Availability"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"/>
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/avability"
+               android:layout_margin="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:thumb="@drawable/thumb"
+                app:track="@drawable/track"
+                app:showText="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_6ssp"
+                android:textOn="Available"
+                android:textOff="Booked"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/_3sdp"
+                android:text="Property Type :"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/propertyType_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/room"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Room"
+                        android:elevation="4dp"
+                        android:textStyle="bold"
+                        android:textColor="@drawable/text_color"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/transparent"
+                        android:padding="15dp"
+                        android:layout_margin="15dp"/>
+                    <RadioButton
+                        android:id="@+id/flat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Flat"
+                        android:elevation="4dp"
+                        android:textColor="@drawable/text_color"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/transparent"
+                        android:padding="15dp"
+                        android:textStyle="bold"
+                        android:layout_margin="15dp"/>
+                    <RadioButton
+                        android:id="@+id/hostel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Hostel"
+                        android:elevation="4dp"
+                        android:textColor="@drawable/text_color"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/transparent"
+                        android:padding="15dp"
+                        android:textStyle="bold"
+                        android:layout_margin="15dp"/>
+                    <RadioButton
+                        android:id="@+id/pg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PG"
+                        android:elevation="4dp"
+                        android:textColor="@drawable/text_color"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/transparent"
+                        android:padding="15dp"
+                        android:textStyle="bold"
+                        android:layout_margin="15dp"/>
+                    <RadioButton
+                        android:id="@+id/commercial"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Commercial"
+                        android:elevation="4dp"
+                        android:textColor="@drawable/text_color"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/transparent"
+                        android:padding="15dp"
+                        android:textStyle="bold"
+                        android:layout_margin="15dp"/>
+
+                </RadioGroup>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/_3sdp"
+                android:text="I Am :"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/iAm_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/Owner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Owner"
+                        android:elevation="4dp"
+                        android:textStyle="bold"
+                        android:textColor="@drawable/text_color"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/transparent"
+                        android:padding="15dp"
+                        android:layout_margin="15dp"/>
+                    <RadioButton
+                        android:visibility="gone"
+                        android:id="@+id/Broker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Broker"
+                        android:elevation="4dp"
+                        android:textColor="@drawable/text_color"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/transparent"
+                        android:padding="15dp"
+                        android:textStyle="bold"
+                        android:layout_margin="15dp"/>
+
+                </RadioGroup>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/_3sdp"
+                android:text="Seeking A :"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"/>
+
+            <TextView
+                android:id="@+id/seeingATv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:drawablePadding="16dp"
+                android:drawableEnd="@drawable/ic_down"
+                android:hint="Seeking a:"
+                android:textColorHint="@color/dark_greay"
+                android:padding="@dimen/_12sdp"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/black"
+                android:background="@drawable/background_greay"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/_3sdp"
+                android:text="Monthly Rent :"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/monthlyRent"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/greay"
+                app:hintTextColor="@color/black"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/black"
+                app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                app:boxStrokeColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Monthly Rent"
+                    android:textColor="@color/black"
+                    android:inputType="numberDecimal"  />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/_3sdp"
+                android:text="Sharing Type :"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/sharingType_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/Sharing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sharing"
+                        android:elevation="4dp"
+                        android:textStyle="bold"
+                        android:textColor="@drawable/text_color"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/transparent"
+                        android:padding="15dp"
+                        android:layout_margin="15dp"/>
+
+                    <RadioButton
+                        android:id="@+id/NonSharing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Non-Sharing"
+                        android:elevation="4dp"
+                        android:textColor="@drawable/text_color"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/transparent"
+                        android:padding="15dp"
+                        android:textStyle="bold"
+                        android:layout_margin="15dp"/>
+
+                    <RadioButton
+                        android:id="@+id/Both"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Both"
+                        android:elevation="4dp"
+                        android:textColor="@drawable/text_color"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/transparent"
+                        android:padding="15dp"
+                        android:textStyle="bold"
+                        android:layout_margin="15dp"/>
+
+                </RadioGroup>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/_3sdp"
+                android:text="Duration of Stay : "
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/durationOfStay_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/LongTerm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Long Term"
+                        android:elevation="4dp"
+                        android:textStyle="bold"
+                        android:textColor="@drawable/text_color"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/transparent"
+                        android:padding="15dp"
+                        android:layout_margin="15dp"/>
+
+                    <RadioButton
+                        android:id="@+id/Shortterm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Short Term"
+                        android:elevation="4dp"
+                        android:textColor="@drawable/text_color"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/transparent"
+                        android:padding="15dp"
+                        android:textStyle="bold"
+                        android:layout_margin="15dp"/>
+
+                    <RadioButton
+                        android:id="@+id/Bothterm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Both Term"
+                        android:elevation="4dp"
+                        android:textColor="@drawable/text_color"
+                        android:background="@drawable/radio_selector"
+                        android:button="@color/transparent"
+                        android:padding="15dp"
+                        android:textStyle="bold"
+                        android:layout_margin="15dp"/>
+
+                </RadioGroup>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/_3sdp"
+                android:text="Meals Included :"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"/>
+
+            <TextView
+                android:id="@+id/mealsTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:drawablePadding="16dp"
+                android:drawableEnd="@drawable/ic_down"
+                android:hint="Meals Included"
+                android:textColorHint="@color/dark_greay"
+                android:padding="@dimen/_12sdp"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/black"
+                android:background="@drawable/background_greay"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/_3sdp"
+                android:text="My Room Includes :"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"/>
+
+            <TextView
+                android:id="@+id/roomsIncludeTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:drawablePadding="16dp"
+                android:drawableEnd="@drawable/ic_down"
+                android:hint="My Room Includes"
+                android:textColorHint="@color/dark_greay"
+                android:padding="@dimen/_12sdp"
+                android:textSize="@dimen/_10ssp"
+                android:textColor="@color/black"
+                android:background="@drawable/background_greay"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/_3sdp"
+                android:text="Mobile Number :"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/mobile"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/greay"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:boxCornerRadiusBottomStart="@dimen/_10sdp"
+                app:boxCornerRadiusTopEnd="@dimen/_5sdp"
+                app:boxCornerRadiusTopStart="@dimen/_5sdp"
+                app:hintTextColor="@color/lite_greay"
+                app:errorTextColor="@color/white"
+                app:boxStrokeColor="@color/yellow">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Mobile No."
+                    android:textColor="@color/black"
+                    android:drawablePadding="@dimen/_15sdp"
+                    android:inputType="number" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/_3sdp"
+                android:text="Description : (ex. rooms details)"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/description"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/greay"
+                app:hintTextColor="@color/black"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                app:boxStrokeColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description"
+                    android:textColor="@color/black"
+                    android:inputType="textMultiLine"  />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/_3sdp"
+                android:text="Area of Property :"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/propertyArea"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/greay"
+                android:layout_marginBottom="@dimen/_10sdp"
+                app:hintTextColor="@color/black"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/black"
+                app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                app:boxStrokeColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Area (sqft)"
+                    android:textColor="@color/black"
+                    android:inputType="numberDecimal"  />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="@dimen/_3sdp"
+                android:text="Available From : "
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/_12ssp"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:textColorHint="@color/greay"
+                    app:hintTextColor="@color/black"
+                    android:textColor="@color/black"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                    app:boxStrokeColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/date"
+                        android:hint="property available from"
+                        android:textColor="@color/black"
+                        android:inputType="textEmailAddress"  />
+                </com.google.android.material.textfield.TextInputLayout>
+                <View
+                    android:id="@+id/dateView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent">
+
+                </View>
+            </FrameLayout>
+
+
+            <FrameLayout
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:background="@color/greay"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:padding="@dimen/_3sdp"
+                    android:text="Property Location"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_16ssp"
+                    android:layout_gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/office"/>
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/state"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:textColorHint="@color/greay"
+                    app:hintTextColor="@color/black"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                    app:boxStrokeColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="State"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:textColor="@color/black"
+                        android:inputType="text"  />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/city"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_centerHorizontal="true"
+                    android:textColorHint="@color/greay"
+                    app:hintTextColor="@color/black"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                    app:boxStrokeColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="City"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:textColor="@color/black"
+                        android:inputType="text"  />
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/address"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:textColorHint="@color/greay"
+                app:hintTextColor="@color/black"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="@dimen/_20sdp"
+                app:boxCornerRadiusBottomEnd="@dimen/_10sdp"
+                app:boxStrokeColor="@color/black">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:textColor="@color/black"
+                    android:inputType="text"  />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_22sdp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:text="Update"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/_12ssp"
+                    app:cornerRadius="@dimen/_10sdp"
+                    android:layout_gravity="center"
+                    android:id="@+id/update"
+                    android:textColor="@color/white"
+                    android:layout_below="@+id/temp"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@color/blue">
+                </com.google.android.material.button.MaterialButton>
+
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:indeterminateTint="@color/blue"
+                    android:visibility="invisible">
+
+                </ProgressBar>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="@dimen/_29sdp"
+        android:layout_height="@dimen/_29sdp"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/gpsBtn"
+        android:padding="@dimen/_4sdp"
+        android:background="@drawable/background"
+        android:src="@drawable/location"
+        android:tint="@color/black"
+        android:layout_margin="@dimen/_12sdp">
+    </ImageView>
+
+</RelativeLayout>

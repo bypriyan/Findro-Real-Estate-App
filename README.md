@@ -33,10 +33,9 @@ Welcome to Findro Real Estate App! This Android application is designed to help 
 
 ## Technologies Used
 - **Programming Language**: Java
-- **Libraries and Frameworks**: Volley, Retrofit
+- **Libraries and Frameworks**: Retrofit
 - **Backend Services**: Firebase Realtime Database, Firebase Cloud Messaging, Firebase Crashlytics, Firebase Authentication, One Signal
-- **Backend Language**: PHP
-- **Database**: MySQL
+- **Database**: Firebase Realtime Database
 
 ## Screenshots
 

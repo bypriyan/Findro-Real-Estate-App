@@ -6,8 +6,8 @@ buildscript {
         gradlePluginPortal()
     }
     dependencies {
-        classpath "com.android.tools.build:gradle:4.2.2"
-        classpath 'com.google.gms:google-services:4.3.10'
+        classpath 'com.android.tools.build:gradle:8.1.0'
+        classpath 'com.google.gms:google-services:4.4.3'
         classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.12.10, 0.99.99]'
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -21,8 +21,8 @@ allprojects {
         mavenCentral()
         jcenter() // Warning: this repository is going to shut down soon
         maven { url 'https://jitpack.io'}
-        def githubProperties = new Properties()
-        githubProperties.load(new FileInputStream(rootProject.file("github.properties")))
+//        def githubProperties = new Properties()
+//        githubProperties.load(new FileInputStream(rootProject.file("github.properties")))
         repositories {
         }
     }
